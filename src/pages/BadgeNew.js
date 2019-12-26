@@ -1,27 +1,27 @@
-import React from 'react';
+import React from "react";
 
-import './styles/BadgeNew.css';
-import header from '../images/badge-header.svg';
-import Badge from '../components/Badge';
-import BadgeForm from '../components/BadgeForm';
+import "./styles/BadgeNew.css";
+import header from "../images/badge-header.svg";
+import Badge from "../components/Badge";
+import BadgeForm from "../components/BadgeForm";
 
 class BadgeNew extends React.Component {
   state = {
     form: {
-      firstName: '',
-      lastName: '',
-      email: '',
-      jobTitle: '',
-      twitter: '',
-    },
+      firstName: "",
+      lastName: "",
+      email: "",
+      jobTitle: "",
+      twitter: ""
+    }
   };
 
   handleChange = e => {
     this.setState({
       form: {
         ...this.state.form,
-        [e.target.name]: e.target.value,
-      },
+        [e.target.name]: e.target.value
+      }
     });
   };
 
