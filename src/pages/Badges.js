@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./styles/Badges.css";
 import confLogo from "../images/badge-header.svg";
 import BadgesList from "../components/BadgesList";
-
+import api from "../api";
 class Badges extends React.Component {
   state = {
     loading: true,
@@ -14,11 +14,11 @@ class Badges extends React.Component {
   componentDidMount() {
     this.fetchData();
   }
-  fetchData = () => {
+  fetchData = async () => {
     this.setState({ loading: true, error: null });
 
     try {
-      const data = [];
+      const data = await api.badges.list();
       this.setState({ loading: false, data: data });
     } catch (error) {
       this.setState({ loading: false, error: error });
