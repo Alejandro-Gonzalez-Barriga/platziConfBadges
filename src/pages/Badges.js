@@ -11,7 +11,18 @@ class Badges extends React.Component {
     error: null,
     data: undefined
   };
+  componentDidMount() {
+    this.fetchData();
+  }
+  fetchData = () => {
+    this.setState({ loading: true, error: null });
 
+    try {
+
+    }catch(){
+      
+    }
+  };
   render() {
     if (this.state.loading === true) {
       return "loading ..";
