@@ -18,9 +18,10 @@ class Badges extends React.Component {
     this.setState({ loading: true, error: null });
 
     try {
-
-    }catch(){
-      
+      const data = [];
+      this.setState({ loading: false, data: data });
+    } catch (error) {
+      this.setState({ loading: false, error: error });
     }
   };
   render() {
