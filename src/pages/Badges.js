@@ -6,9 +6,16 @@ import confLogo from "../images/badge-header.svg";
 import BadgesList from "../components/BadgesList";
 
 class Badges extends React.Component {
-  state = {};
+  state = {
+    loading: true,
+    error: null,
+    data: undefined
+  };
 
   render() {
+    if (this.state.loading === true) {
+      return "loading ..";
+    }
     return (
       <React.Fragment>
         <div className="Badges">
