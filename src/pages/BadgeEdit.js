@@ -9,7 +9,7 @@ import PageLoading from "../components/PageLoading";
 
 class BadgeEdit extends React.Component {
   state = {
-    loading: false,
+    loading: true,
     error: null,
     form: {
       firstName: "",
@@ -20,6 +20,19 @@ class BadgeEdit extends React.Component {
     }
   };
 
+  componentDidMount() {
+    this.fetchData();
+  }
+  fetchData = async e => {
+    this.setState({ loading: true, error: null });
+
+    try {
+      const data = await api.badges.read(this.props.match.params.badgeId);
+      this.setState({ loading: false, form: data });
+    } catch (error) {
+      this.setState({ loading: false, error: error });
+    }
+  };
   handleChange = e => {
     this.setState({
       form: {
@@ -70,6 +83,7 @@ class BadgeEdit extends React.Component {
             </div>
 
             <div className="col-6">
+              <h1>Edit Attendant</h1>
               <BadgeForm
                 onChange={this.handleChange}
                 onSubmit={this.handleSubmit}
