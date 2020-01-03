@@ -2,7 +2,11 @@ import React from "react";
 
 class BadgeDetails extends React.Component {
   render() {
-    return "BadgeDetails";
+    return (
+      <div>
+        <div className="BadgeDetails__hero"></div>
+      </div>
+    );
   }
 }
 

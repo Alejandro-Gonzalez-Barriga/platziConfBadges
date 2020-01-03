@@ -6,6 +6,7 @@ import confLogo from "../images/badge-header.svg";
 import BadgesList from "../components/BadgesList";
 import api from "../api";
 import PageLoading from "../components/PageLoading";
+import MiniLoader from "../components/MiniLoader";
 import PageError from "../components/PageError";
 
 class Badges extends React.Component {
@@ -60,7 +61,7 @@ class Badges extends React.Component {
           </div>
 
           <BadgesList badges={this.state.data} />
-          {this.state.loading && "Loading.."}
+          {this.state.loading && <MiniLoader />}
         </div>
       </React.Fragment>
     );
