@@ -5,7 +5,7 @@
       "firstName": "Fredo",
       "lastName": "Grady",
       "email": "Leann_Berge@gmail.com",
-      "jobTitle": "Legacy Brand Director",
+      "jobTitle": "",
       "twitter": "FredaGrady22221-7573",
       "avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon"
     },
@@ -504,6 +504,14 @@
       "jobTitle": "FullStack Engineer",
       "twitter": "sweet",
       "id": "B7xSmSn"
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "jobTitle": "",
+      "twitter": "",
+      "id": "Hz088p8"
     }
   ]
 }
