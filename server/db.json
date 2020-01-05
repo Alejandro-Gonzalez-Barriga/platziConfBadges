@@ -15,7 +15,7 @@
       "lastName": "Rodriguez",
       "email": "Ilene66@hotmail.com",
       "jobTitle": "Human Research Architect",
-      "twitter": "MajorRodriguez61545",
+      "twitter": "MajorRodriguez6154",
       "avatarUrl": "https://www.gravatar.com/avatar/d57a8be8cb9219609905da25d5f3e50a?d=identicon"
     },
     {
@@ -115,6 +115,14 @@
       "jobTitle": "FullStack Engineer",
       "twitter": "none",
       "id": "UkrKf4J"
+    },
+    {
+      "firstName": "Alex",
+      "lastName": "Gonzalez",
+      "email": "alejandro.gonzalez.barriga@gmail.com",
+      "jobTitle": "FullStack Engineer",
+      "twitter": "sweet",
+      "id": "3vtxJMq"
     }
   ]
 }
