@@ -2,7 +2,7 @@
   "name": "platzi-badges",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alejandro-gonzalez-barriga.github.io/platziBadgeProject",
+  "homepage": "https://alejandro-gonzalez-barriga.github.io/platziConfBadges/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
